@@ -5,8 +5,6 @@ image = Image.open('BobEsponja.png')
 st.image(image, caption = 'Interfaces Multimodales')
 texto = st.text_input('escribe algo', 'Este es mi texto')
 st.write('El texto escrito es', texto)
-
-
 st.subheader("Ahora usemos dos columnas")
 col1, col2 = st.columns(2)
 with col1:
@@ -24,3 +22,8 @@ with col2:
     st.write('la audición es fundamental para tu interfaz')
   if modo == 'táctil':
     st.write('el tacto es fundamental para tu interfaz')
+st.subheader("Uso de botones")
+if st.button('Presiona el boton'):
+  st.write('Gracias por presionar')
+else:
+  st.write('No has presionado aún')
